@@ -19,7 +19,7 @@ jobs:
       - name: Construindo e Enviando Imagem Docker
         uses: docker/build-push-action@v6
         with:
-          context: "./srcr"
+          context: ./src
           push: true
           file: ./Dockerfile
           tags:        
