@@ -19,9 +19,9 @@ jobs:
       - name: Construindo e Enviando Imagem Docker
         uses: docker/build-push-action@v6
         with:
-          context: ./
+          context: ./src
           push: true
-          file: ./Dockerfile
+          file: ./src/Dockerfile
           tags:        
             edsonrsjr/fake-shop:latest
             edsonrsjr/fake-shop:${{ github.run_number }}
